@@ -5,7 +5,6 @@ import {
   InputLabel,
   Box,
   Select,
-  useTheme,
 } from "@mui/material";
 
 import Header from "components/Header";
