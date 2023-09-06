@@ -14,11 +14,21 @@ export const api = createApi({
     "Performance",
     "Dashboard",
   ],
+  // endpoints: (build) => ({
+  //   getUser: build.query({
+  //     query: (id) => `general/user/${id}`,
+  //     providesTags: ["User"],
+  //   }),
+
   endpoints: (build) => ({
     getUser: build.query({
-      query: (id) => `general/user/${id}`,
+      query: (id) => {
+        console.log(`Fetching user with ID ${id}`);
+        return `general/user/${id}`;
+      },
       providesTags: ["User"],
     }),
+    
     getProducts: build.query({
       query: () => "client/products",
       providesTags: ["Products"],
