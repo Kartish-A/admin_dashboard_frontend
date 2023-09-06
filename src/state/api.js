@@ -24,6 +24,7 @@ export const api = createApi({
     getUser: build.query({
       query: (id) => {
         console.log(`Fetching user with ID ${id}`);
+        console.log('Frontend is working!');
         return `general/user/${id}`;
       },
       providesTags: ["User"],
