@@ -16,4 +16,4 @@ And you want to see this project running:
 
 5- Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-![Homepage](../client/src/assets//admin_dashboard.png)
+![Homepage](./src/assets/admin_dashboard.png)
